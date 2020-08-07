@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honest ASC</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col col-sm-12 col-md-3" style="background-color: rgb(200, 212, 211); height:600px;overflow-y:scroll;">
+            <p id="date" style="margin-bottom: 30px;"></p>
+            <a href="index.html" style="color: green; margin-bottom: 5px;">Home | Sign out | Site map</a>
+            <h6 style="font-weight: bold;">Search ASC</h6>
+            <form><input type="text" style="margin-bottom: 20px;"></form>
+            <div>
+                <a href="#" data-toggle="collapse" data-target="#acad">Academics</a>
+                <div id="acad" class="collapse">
+                <!--    <a href="#">- Alumni form</a><br>
+                    <a href="#">- Canara Bank Authorisation Letter</a><br>
+                    <a href="#">- Pay Convo Fees</a><br> 
+                    <a href="#">- Convo Form</a><br>-->
+                    <a id="retag" href="#">- Change of tag</a><br>
+                    <a href="#" data-toggle="collapse" data-target="#courses">- All About Courses</a>
+                    <div id="courses" class="collapse">
+                        <a id="rc" href="#" style="margin-left: 10px;">- Running Courses</a><br>
+                    <!--    <a href="#" style="margin-left: 10px;">- Bulletin Report</a><br>
+                        <a href="#" style="margin-left: 10px;">- Curriculum</a><br>-->
+                        <a id="cwc" href="#" style="margin-left: 10px;">- Courses with cap</a><br>
+                        <a id="gs" href="#" style="margin-left: 10px;">- Grading Statistics</a><br>
+                        <a id="pr" href="#" style="margin-left: 10px;">- Pre-registration</a><br>      
+                    </div>
+                </div><br>
+                <a id="per" href="#">Update Personal Information</a>
+                <a id="reg" href="#">Registration</a><br>
+                <a id="pmt" href="#">Placement</a><br>
+            <!--    <a href="#">SAP user license details</a><br>
+                <a href="#">ERP Master data</a><br>
+                <a href="#">Accounts and Salary</a><br>
+                <a href="#">Moodle</a><br>
+                <a href="#">IRCC</a><br>
+                <a href="#">Surveys</a><br> -->
+                <a id="admin" href="#">Admin</a><br>
+                <a id="ext" href="#">External ASC</a><br>
+            <!--    
+                <a href="#">Guest House</a><br>
+                <a href="#">GatePass</a><br>
+                <a href="#">Downloadable Forms</a><br>
+                <a href="#">Online Purchase System (Reports Only)</a><br>
+                <a href="#">Scrutiny of job applicants</a><br>
+                <a href="#">Online Mobile Registry</a><br>
+                <a href="#">Print</a><br>
+            -->
+
+            </div>           
+        </div>
+
+
+
+
+        <div class="col col-sm-12 col-md-9">
+            <h3 id="txt" style="margin-top: 40px;">Andar Kaise Aayaa Ruk Abhi Error 502 deta hu !!!</h3>
+            <div style="margin-top: 30px;">
+                <img id="img" src="home.jpg" width="50%" height="50%">
+                <hr>
+                <h4 style="color: blue;">Notice: This Portal is made only for the purpose of Humour and nothing else.
+                If you had a Successful Registration **smoothly**, you might refrain from stalking the content of this portal.
+
+                </h4>
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+
+    var today = new Date();
+    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    var dateTime = date+' '+time;
+    document.querySelector('#date').innerHTML = dateTime;
+    window.addEventListener('DOMContentLoaded', () => {
+
+        document.querySelector('#pr').onclick = () => {
+        document.querySelector('#txt').innerHTML = "Agar tum Non S grade wale mein se ho...";
+        var img = document.querySelector('#img');
+        img.setAttribute("src","prereg.jpg");
+        }
+
+        document.querySelector('#reg').onclick = () => {
+        document.querySelector('#txt').innerHTML = "Server down hai kyuki SharmaJi ka beta 5vi baar course adjustment kar raha hai. To fir tu...";
+        var img = document.querySelector('#img');
+        img.setAttribute("src","reg.jpg");
+        }
+
+        document.querySelector('#per').onclick = () => {
+        document.querySelector('#txt').innerHTML = "Mein baar baar yahi puchunga aur tu batayega bhi kyunki..."
+        var img = document.querySelector('#img');
+        img.setAttribute("src","per.jpg");
+        }
+
+        document.querySelector('#cwc').onclick = () => {
+        document.querySelector('#txt').innerHTML = "If you have come for Pottery then...";
+        var img = document.querySelector('#img');
+        img.setAttribute("src","scheme.jpg");
+        }
+
+        document.querySelector('#gs').onclick = () => {
+        document.querySelector('#txt').innerHTML = "Sirf 20% se kam Junta BB se upar hai to...";
+        var img = document.querySelector('#img');
+        img.setAttribute("src","ricks.jpg");
+        }
+
+        document.querySelector('#admin').onclick = () => {
+        document.querySelector('#txt').innerHTML = "See me after 9th";
+        var img = document.querySelector('#img');
+        img.setAttribute("src","admin.jpg");
+        }
+
+        document.querySelector('#pmt').onclick = () => {
+        document.querySelector('#txt').innerHTML = "";
+        var img = document.querySelector('#img');
+        img.setAttribute("src","placement.jpg");
+        }
+
+        document.querySelector('#retag').onclick = () => {
+        document.querySelector('#txt').innerHTML = "";
+        var img = document.querySelector('#img');
+        img.setAttribute("src","retag.jpeg");
+        }
+
+        document.querySelector('#rc').onclick = () => {
+        document.querySelector('#txt').innerHTML = "Dekh Bhai, hazaar baar error dunga, fir tujhe bataaunga ki Slot Clash hai.";
+        var img = document.querySelector('#img');
+        img.setAttribute("src","chr.jpg");
+        }
+
+        document.querySelector('#ext').onclick = () => {
+        document.querySelector('#txt').innerHTML = "No SSO, No VPN";
+        var img = document.querySelector('#img');
+        img.setAttribute("src","ext.jpg");
+        }
+    });
+    
+
+
+</script>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
